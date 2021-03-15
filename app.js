@@ -27,7 +27,6 @@ const moveToNextSlide = () => {
 }
 
 const moveToPrevSlide = () => {
-    
     hideAllSlides();
 
     if(slidePosition === 0){
@@ -35,7 +34,6 @@ const moveToPrevSlide = () => {
     } else {
         slidePosition--;
     }
-
    displaySlide();
 }
 
