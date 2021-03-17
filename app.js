@@ -28,7 +28,6 @@ const moveToNextSlide = () => {
 
 const moveToPrevSlide = () => {
     hideAllSlides();
-
     if(slidePosition === 0){
         slidePosition = totalSlides - 1;
     } else {
