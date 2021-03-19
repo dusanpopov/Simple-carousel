@@ -18,22 +18,14 @@ const displaySlide = () => {
 
 const moveToNextSlide = () => {
     hideAllSlides();
-    if(slidePosition === totalSlides - 1){
-        slidePosition = 0;
-    } else {
-        slidePosition++;
-    }
+    slidePosition === totalSlides - 1 ? slidePosition = 0 : slidePosition++;
     displaySlide();
 }
 
 const moveToPrevSlide = () => {
     hideAllSlides();
-    if(slidePosition === 0){
-        slidePosition = totalSlides - 1;
-    } else {
-        slidePosition--;
-    }
-   displaySlide();
+    slidePosition === 0 ? slidePosition = totalSlides - 1 : slidePosition--;
+    displaySlide();
 }
 
 previousBtn.addEventListener("click", moveToPrevSlide);
